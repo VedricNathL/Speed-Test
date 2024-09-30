@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make table</title>
+    
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        form{
+            margin-right:auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+<table style="width: 50%;">
+    <tr>
+        <th style="width: 1%;">no</th>
+      <th style="width: 60%;" >Keterangan</th>
+      <th style="width: 40%;">Bersedia Membayar</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>Bersedia Membayar <b>Dana Sumbangan Pembangunan (DSP)</b> sebesar <b>Rp.8,500,000</b> dengan mekanisme pembayaran Dana Sumbangan Pendidikan</th>
+      <th>
+        <form action="">
+            <input type="radio" id="Lunas" name="Lunas" value="">
+            <label for="Lunas ">Lunas saat Daftar Ulang</label><br>
+            <hr>
+            <input type="radio" id="Lunas" name="Lunas" value="CSS">
+            <label for="Lunas"> 60% dibayarkan saat daftar ulang,dari sisanya dibayarkan paling terlambat tanggal 13 juli 2024</label><br> 
+      </form>
+    </th>
+    </tr>
+    <tr>
+      <th>2</th>
+      <th>Beserdia membayar <b>Sumbangan Penyelenggraan Pendidikan (SPP)</b> secara rutin setiap bulan sebesar <b>Rp,550.000</b>yang dibayarkan sebelum tanggal 10 setiap bulannya kecuali bualan juli 2024</th>
+       <th>
+        <form action="">
+            <input type="checkbox">
+        </form>
+    </th>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>pembayaran Lainnya <br>
+            Setalah Putra/Putri kami di terima di SMK Wikrama Bogor,Kami juga memberikan <br>
+            <br>
+            <br>
+            a. Wakaf Pembangunan Masjid Al-Ikram 
+            <hr>
+            b.Zakat infaq Sodaqoh secara Rutin setiap bulan
+        </th>
+        <th>
+            
+            <form action="" >
+                <input type="radio" value="R" name="5000k">
+                <label for="5000k">Rp.300,000</label><br>
+                <input type="radio" value="R" name="5000k">
+                <label for="5000k">Rp.500,000</label><br>
+                <input type="radio" value="R" name="5000k">
+                <label for="5000k">Rp.1,000,000</label><br>
+                <input type="radio" value="R" name="5000k">
+                <label for="5000k">Rp.2.000,000</label><br>
+                <input type="radio" value="R" name="5000k">
+                <label for="5000k">Rp.5.000,000</label><br>
+                <input type="radio" value="R" name="5000k">
+                <label for="5000k">>Rp.5.000,000 atau <input type="number"></label>
+            </form>
+            <hr>
+            <input type="number" value="Rp.20.000">
+        </th>
+        <th></th>
+    </tr>
+
+  </table>
+
+</body>
+</html>

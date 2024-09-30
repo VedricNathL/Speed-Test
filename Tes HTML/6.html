@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari</title>
+</head>
+<body>
+    <form id="searchForm">
+        <input type="text" id="text">
+        <input type="submit" value="Cari">
+    </form>
+    
+
+    <p id="result"></p>
+
+    <script>
+
+        let arr = ['kafka','ako','ardissya']
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const inputText = document.getElementById('text').value.trim();
+            const resultElement = document.getElementById('result');
+            
+            if (inputText == arr) {
+                
+                resultElement.textContent = "Data : " + inputText + "ada"
+            } else {
+                resultElement.textContent = "Tidak ada data " + inputText
+            }
+
+            var nodata = document.getElementById("nodata");
+
+            if(typeof inputText === "string" && inputText.length != 0){
+                nodata.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

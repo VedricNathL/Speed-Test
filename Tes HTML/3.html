@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        .mid{
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            ;
+        }
+        .btn{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50px;
+            transition-duration: 0.4s;
+        }
+        .bulet{
+            background-color: white ;
+            width: 50%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .btn:hover{
+            background-color: aqua;
+
+        }
+        .bulet:hover{
+            background-color: white ;
+            width: 50%;
+            height: 100%;
+            border-radius: 50%;
+            margin-left: 50px;
+        }
+        .switch {
+    position: relative;
+    height: 1.5rem;
+    width: 3rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 99px;
+    background-color: aqua;
+    transition: all .3s ease;
+    }
+
+    .switch:checked {
+    background-color: blue;
+    }
+
+    .switch::before {
+    position: absolute;
+    content: "";
+    left: calc(1.5rem - 1.6rem);
+    top: calc(1.5rem - 1.6rem);
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+    border: 1px solid rgba(100, 116, 139, 0.527);
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+    transition: all .3s ease;
+    }
+
+    .switch:hover::before {
+    box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
+    }
+
+    .switch:checked:hover::before {
+    box-shadow: 0 0 0px 8px rgba(236, 72, 153, .15)
+    }
+
+    .switch:checked:before {
+    transform: translateX(100%);
+    }
+    </style>
+</head>
+<body>
+    <div class="mid">
+        <!-- <div class="btn">
+            <div class="bulet"></div>
+        </div> -->
+        <br>
+        <br>
+        <br>
+        <div class="io">
+            <input class="switch" type="checkbox" checked="true">
+        </div>
+    </div>
+</body>
+</html>

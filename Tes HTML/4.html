@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Ganti Gambar</title>
+</head>
+<body>
+    
+    <img id="displayedImage" src="nerd.jpeg" alt="Gambar Pilihan" style="width:300px; height:200px;">
+    
+    <select id="imageDropdown" onclick="showCountdown()">
+        <option value="tiris.jpeg" >Gambar 1</option>
+        <option value="sad.jpeg" >Gambar 2</option>
+        <option value="cool.jpeg" >Gambar 3</option>
+    </select>
+
+    <select name="" id="opacity" onclick="showCountdown()"" >
+        <option value="1" >1</option>
+        <option value="0.5" >0.5</option>
+        <option value="0.1" >0.2</option>
+    </select>
+
+
+    <div id="countdownAlert"></div>
+    <button id="ho" type="submit" onclick="showCountdown()">ubah</button>
+    
+        
+    
+    <script>
+        const dropdown = document.getElementById('imageDropdown');
+        const image = document.getElementById('displayedImage');
+        const opa = document.getElementById("opacity")
+        const ho = document.getElementById("ho")
+
+        
+        dropdown.addEventListener('change', function() {
+            
+            image.src = this.value;
+        });
+
+        opa.addEventListener('change',function(){
+            image.style.opacity = this.value
+        })
+
+        function showCountdown() {
+            let count = 5;
+            const alertBox = document.getElementById('countdownAlert');
+            alertBox.style.display = 'block';
+            alertBox.innerText = `gambar dan opa akan di hapus: ${count}`;
+
+            
+                const countdown = setInterval(function() {
+                    count--;
+                    if (count >= 1) {
+                        alertBox.innerText = `gambar dan opa akan di hapus: ${count}`;
+                    } else {
+                        clearInterval(countdown);
+                        alertBox.style.display = 'none';
+                        image.src = value = "nerd.jpeg"
+                        image.style.opacity = value = "1"
+                    }
+                }, 1000);
+            }
+            
+
+        
+    </script>
+    
+</body>
+</html>
